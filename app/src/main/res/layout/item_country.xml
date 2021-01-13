@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_country"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#70FFFFFF"
+    android:backgroundTint="#6DFFFFFF"
+    android:elevation="8dp"
+    android:padding="8dp"
+    android:layout_margin="16dp"
+    app:layout_constraintCircleRadius="16dp">
+
+    <ImageView
+        android:id="@+id/ivCountryFlag"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/afgflag"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Country Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivCountryFlag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCountryCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Capital"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/ivCountryFlag"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryName" />
+
+    <TextView
+        android:id="@+id/tvCountryPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Population"
+        app:layout_constraintStart_toEndOf="@+id/ivCountryFlag"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountryCapital" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

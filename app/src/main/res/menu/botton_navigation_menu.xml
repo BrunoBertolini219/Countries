@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/europeFragment"
+        android:icon="@drawable/ic_baseline_euro_24"
+        android:title="Europe"/>
+
+    <item
+        android:id="@+id/africaFragment"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="@string/africa"/>
+
+    <item
+        android:id="@+id/americasFragment"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="South America"/>
+
+
+</menu>
